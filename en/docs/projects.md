@@ -1,28 +1,61 @@
 # Projects
 
-Each project has a README, CI pipeline and documentation. Status legend:
-:material-check-circle: done · :material-progress-wrench: in progress · :material-lightbulb-outline: planned
+Each project has a README, CI pipeline and documentation. Links are being added.
 
 ## 4etam.com — this site
 
-:material-check-circle: Static site on Zensical, deployed to GitHub Pages by GitHub Actions.
+Static site on Zensical in three languages, deployed to GitHub Pages by GitHub Actions.
 DNS and email routing for the domain are managed with Terraform on Cloudflare.
 
-[:fontawesome-brands-github: Site](https://github.com/almaty-itrider/4etam.com) ·
-[:fontawesome-brands-github: Infra](https://github.com/almaty-itrider/infra)
+[:fontawesome-brands-github: 4etam.com](https://github.com/almaty-itrider/4etam.com) ·
+[:fontawesome-brands-github: infra](https://github.com/almaty-itrider/infra)
 
-## TODO: next project
+## FastAPI service
 
-:material-lightbulb-outline: One or two sentences: what problem it solves and the stack.
+REST API on FastAPI: async endpoints, data validation with Pydantic, PostgreSQL.
 
-<!--
-Template for a new project:
+`Python · FastAPI · PostgreSQL · Docker`
 
-## Project name
+*Links coming soon*
 
-:material-progress-wrench: What it does, in one or two sentences. Stack: X, Y, Z.
+<!-- [:fontawesome-brands-github: Code](https://github.com/almaty-itrider/REPO) · [:material-play-circle: Demo](https://...) -->
 
-[:fontawesome-brands-github: Code](https://github.com/almaty-itrider/repo) ·
-[:material-book-open-variant: Docs](https://docs.4etam.com/repo/) ·
-[:material-play-circle: Demo](https://repo.4etam.com)
--->
+## Django REST Framework API
+
+Backend on Django REST Framework: models, serializers, authentication, admin panel.
+
+`Python · Django · DRF · PostgreSQL`
+
+*Links coming soon*
+
+<!-- [:fontawesome-brands-github: Code](https://github.com/almaty-itrider/REPO) · [:material-play-circle: Demo](https://...) -->
+
+## Go service on Gin
+
+HTTP service in Go with the Gin framework.
+
+`Go · Gin · Docker`
+
+*Links coming soon*
+
+<!-- [:fontawesome-brands-github: Code](https://github.com/almaty-itrider/REPO) · [:material-play-circle: Demo](https://...) -->
+
+## React + TypeScript app
+
+Web frontend built with React and TypeScript.
+
+`React · TypeScript`
+
+*Links coming soon*
+
+<!-- [:fontawesome-brands-github: Code](https://github.com/almaty-itrider/REPO) · [:material-play-circle: Demo](https://...) -->
+
+## Flutter mobile app
+
+Cross-platform mobile app for iOS and Android.
+
+`Flutter · Dart`
+
+*Links coming soon*
+
+<!-- [:fontawesome-brands-github: Code](https://github.com/almaty-itrider/REPO) · [:material-play-circle: Demo](https://...) -->

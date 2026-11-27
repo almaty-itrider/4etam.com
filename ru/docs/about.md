@@ -103,13 +103,30 @@ DNS и Email Routing для 4etam.com управляются через Terrafor
 | Сеть                 | HAProxy, Nginx, BIND, Cloudflare                                     |
 | Мониторинг и логи    | Grafana, VictoriaMetrics, Zabbix, ELK                                |
 | Безопасность         | HashiCorp Vault                                                     |
-| Облако               | AWS (EC2, S3, IAM, VPC)                                              |
-| Языки                | Python (FastAPI, Django REST Framework), Bash                        |
+| Облако               | AWS (EC2, S3, IAM, VPC), DigitalOcean (базово), Cloudflare           |
+| Бэкенд               | Python (FastAPI, Django REST Framework), Go (Gin), Bash              |
+| Фронтенд и мобайл    | React + TypeScript, Flutter                                          |
 
-## Образование и языки
+## Образование
 
 - **Магистр, информационные системы** — Казахский экономический университет им. Т. Рыскулова, 2015
-- **Языки:** казахский (родной), русский (C1), английский (B1)
+
+## Сертификаты и курсы
+
+| Год  | Сертификат / курс                                       | Кем выдан                    |
+|------|---------------------------------------------------------|------------------------------|
+| 2024 | JavaScript (Full-Stack) разработчик — React, TypeScript | Attractor School Almaty      |
+| 2023 | Python (Django) веб-разработчик                         | Attractor School Almaty      |
+| 2021 | CCNA *(действовал до декабря 2024)*                      | Cisco                        |
+| 2021 | Oracle Cloud Infrastructure Operations Associate        | Oracle                       |
+| 2018 | Oracle Database 11g: Administration Workshop I          | Учебный центр ELTC           |
+| 2017 | VMware vSphere 6.5: Install, Configure, Manage          | Human Growth Kazakhstan      |
+| 2017 | Administering System Center 2012 Configuration Manager  | Microsoft                    |
+| 2015 | Системное администрирование Linux                       | Учебный центр ELTC           |
+
+## Языки
+
+Казахский (родной) · русский (C1) · английский (B1)
 
 ## Контакты
 

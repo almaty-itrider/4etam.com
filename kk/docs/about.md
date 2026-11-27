@@ -104,13 +104,30 @@ Red Hat жазылымдары Satellite-та виртуалды машинал�
 | Желі                   | HAProxy, Nginx, BIND, Cloudflare                                     |
 | Мониторинг және логтар | Grafana, VictoriaMetrics, Zabbix, ELK                                |
 | Қауіпсіздік            | HashiCorp Vault                                                     |
-| Бұлт                   | AWS (EC2, S3, IAM, VPC)                                              |
-| Тілдер                 | Python (FastAPI, Django REST Framework), Bash                        |
+| Бұлт                   | AWS (EC2, S3, IAM, VPC), DigitalOcean (негіздері), Cloudflare        |
+| Бэкенд                 | Python (FastAPI, Django REST Framework), Go (Gin), Bash              |
+| Фронтенд және мобайл   | React + TypeScript, Flutter                                          |
 
-## Білімі және тілдер
+## Білімі
 
 - **Магистр, ақпараттық жүйелер** — Тұрар Рысқұлов атындағы Қазақ экономикалық университеті, 2015
-- **Тілдер:** қазақ (ана тілі), орыс (C1), ағылшын (B1)
+
+## Сертификаттар мен курстар
+
+| Жыл  | Сертификат / курс                                       | Берген ұйым                  |
+|------|---------------------------------------------------------|------------------------------|
+| 2024 | JavaScript (Full-Stack) әзірлеуші — React, TypeScript   | Attractor School Almaty      |
+| 2023 | Python (Django) веб-әзірлеуші                           | Attractor School Almaty      |
+| 2021 | CCNA *(2024 жылғы желтоқсанға дейін жарамды болды)*      | Cisco                        |
+| 2021 | Oracle Cloud Infrastructure Operations Associate        | Oracle                       |
+| 2018 | Oracle Database 11g: Administration Workshop I          | ELTC оқу орталығы            |
+| 2017 | VMware vSphere 6.5: Install, Configure, Manage          | Human Growth Kazakhstan      |
+| 2017 | Administering System Center 2012 Configuration Manager  | Microsoft                    |
+| 2015 | Linux жүйелік әкімшілігі                                | ELTC оқу орталығы            |
+
+## Тілдер
+
+Қазақ (ана тілі) · орыс (C1) · ағылшын (B1)
 
 ## Байланыс
 

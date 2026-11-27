@@ -103,13 +103,30 @@ The story is in the [first blog post](blog/2026-11-hello-world.md).
 | Networking        | HAProxy, Nginx, BIND, Cloudflare                                       |
 | Observability     | Grafana, VictoriaMetrics, Zabbix, ELK                                  |
 | Security          | HashiCorp Vault                                                       |
-| Cloud             | AWS (EC2, S3, IAM, VPC)                                                |
-| Languages         | Python (FastAPI, Django REST Framework), Bash                          |
+| Cloud             | AWS (EC2, S3, IAM, VPC), DigitalOcean (basics), Cloudflare             |
+| Backend           | Python (FastAPI, Django REST Framework), Go (Gin), Bash                 |
+| Frontend & mobile | React + TypeScript, Flutter                                            |
 
-## Education & languages
+## Education
 
 - **Master's in Information Systems** — Turar Ryskulov Kazakh Economic University, 2015
-- **Languages:** Kazakh (native), Russian (C1), English (B1)
+
+## Certifications & courses
+
+| Year | Certification / course                                  | Issuer                       |
+|------|---------------------------------------------------------|------------------------------|
+| 2024 | JavaScript (Full-Stack) Developer — React, TypeScript   | Attractor School Almaty      |
+| 2023 | Python (Django) Web Developer                           | Attractor School Almaty      |
+| 2021 | CCNA *(valid until Dec 2024)*                            | Cisco                        |
+| 2021 | Oracle Cloud Infrastructure Operations Associate        | Oracle                       |
+| 2018 | Oracle Database 11g: Administration Workshop I          | ELTC Training Center         |
+| 2017 | VMware vSphere 6.5: Install, Configure, Manage          | Human Growth Kazakhstan      |
+| 2017 | Administering System Center 2012 Configuration Manager  | Microsoft                    |
+| 2015 | Linux System Administration                             | ELTC Training Center         |
+
+## Languages
+
+Kazakh (native) · Russian (C1) · English (B1)
 
 ## Contact
 
