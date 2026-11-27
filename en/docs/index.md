@@ -18,7 +18,7 @@ This site is where I publish my pet projects, write-ups and documentation.
 
 - :material-server: **Infrastructure** — bare metal, Proxmox VE, VMware, Kubernetes, multi-DC replication
 - :material-swap-horizontal: **Platform migrations** — VMware → Proxmox at scale, Docker Swarm → Kubernetes
-- :material-source-branch: **CI/CD & IaC** — GitLab CI, GitHub Actions, Terraform, Ansible, Helm
+- :material-source-branch: **GitOps, CI/CD & IaC** — Argo CD, GitLab CI, GitHub Actions, Terraform, Ansible, Helm
 - :material-database: **Data platforms** — PostgreSQL HA with Patroni, Kafka, RabbitMQ, Redis
 - :material-chart-line: **Observability** — Grafana, VictoriaMetrics, Zabbix, ELK
 - :material-shield-key: **Security** — secrets management with Vault

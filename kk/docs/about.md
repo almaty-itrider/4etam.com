@@ -17,6 +17,7 @@
 - Spring Boot / Angular микросервистері үшін GitLab CI, Ansible, Terraform, Nexus және Helm арқылы CI/CD
 - PostgreSQL репликациясы және сақтық көшірмелері; Kafka, BIND, HAProxy, Nginx, ELK, Zabbix, VictoriaMetrics, Grafana
 - VMware және Proxmox негізіндегі виртуалды инфрақұрылым, бірнеше дата-орталық арасындағы репликация
+- «Антифрод-орталық» жобасында Argo CD арқылы GitOps енгіздім (DEV, STAGE, PRODUCTION)
 
 ### DevOps инженер / Python бэкенд әзірлеуші — Investlink Ltd
 *2024 жылғы ақпан — 2026 жылғы ақпан*
@@ -87,6 +88,25 @@ Red Hat жазылымдары Satellite-та виртуалды машинал�
 Көшумен қатар қолмен жасалатын операциялардан қайталанатын әрі бақыланатын өзгерістерге көшуді
 жалғастырдық: инфрақұрылым үшін **Terraform**, конфигурация үшін **Ansible**, процестерді стандарттау.
 
+## «Антифрод-орталық» жобасындағы GitOps
+
+Мен жетекшілік ететін **«Антифрод-орталық»** жобасында **GitOps** тәсілін енгіздім.
+Бұл компаниядағы осылай жұмыс істейтін алғашқы жоба.
+
+**Жасалды:**
+
+- **Argo CD** Kubernetes ішінде үш ортада да орналастырылды: **DEV, STAGE және PRODUCTION**
+- жобаның Kubernetes-тегі барлық сервистері енді Git-тен Argo CD арқылы басқарылады
+- репозиторий қорғалған: өзгерістер **тек merge request арқылы**, ревьюден кейін енгізіледі —
+  қолмен `kubectl apply` жоқ, әр өзгеріс бақыланады және оңай кері қайтарылады
+
+**Жұмыс үстінде — қалғанының бәрін де осылай автоматтандыру:**
+
+- **GitOps бойынша Ansible** — плейбуктер тек MR арқылы өзгертіліп, біреудің ноутбугінен емес,
+  пайплайн арқылы қолданылады
+- **Vault-тағы құпиялар** — **домендік авторизациямен (Active Directory)** сақтау және
+  **автоматты ротация**, бұлар да Git пен MR арқылы
+
 ## Cloudflare
 
 Құралдарымдағы жаңа нәрсе: Cloudflare-мен осы сайтты жасау барысында жұмыс істей бастадым.
@@ -99,7 +119,7 @@ Red Hat жазылымдары Satellite-та виртуалды машинал�
 |------------------------|---------------------------------------------------------------------|
 | Контейнерлер           | Kubernetes, Helm, Docker, Docker Swarm                               |
 | Виртуализация          | Proxmox VE, VMware vSphere                                           |
-| IaC және CI/CD         | Terraform, Ansible, GitLab CI, GitHub Actions, Jenkins, Nexus        |
+| IaC және CI/CD         | Terraform, Ansible, Argo CD (GitOps), GitLab CI, GitHub Actions, Jenkins, Nexus |
 | Деректер мен кезектер  | PostgreSQL, Patroni, Kafka, RabbitMQ, Redis                          |
 | Желі                   | HAProxy, Nginx, BIND, Cloudflare                                     |
 | Мониторинг және логтар | Grafana, VictoriaMetrics, Zabbix, ELK                                |

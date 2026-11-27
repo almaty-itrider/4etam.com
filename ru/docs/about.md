@@ -17,6 +17,7 @@
 - CI/CD на GitLab CI, Ansible, Terraform, Nexus и Helm для микросервисов на Spring Boot / Angular
 - Репликация и резервное копирование PostgreSQL; Kafka, BIND, HAProxy, Nginx, ELK, Zabbix, VictoriaMetrics, Grafana
 - Виртуальная инфраструктура на VMware и Proxmox, репликация между несколькими дата-центрами
+- Внедрил GitOps с Argo CD в проекте «Антифрод-центр» (DEV, STAGE, PRODUCTION)
 
 ### DevOps-инженер / Python-бэкенд-разработчик — Investlink Ltd
 *Февраль 2024 — февраль 2026*
@@ -86,6 +87,25 @@
 Параллельно с переездом продолжили уходить от ручных операций к воспроизводимым и контролируемым
 изменениям: **Terraform** для инфраструктуры, **Ansible** для конфигурации, стандартизация процессов.
 
+## GitOps в проекте «Антифрод-центр»
+
+В проекте, который я курирую, — **«Антифрод-центр»** — я внедрил подход **GitOps**.
+Это первый проект в компании, который работает так.
+
+**Сделано:**
+
+- **Argo CD** развёрнут внутри Kubernetes на всех трёх средах: **DEV, STAGE и PRODUCTION**
+- все сервисы проекта в Kubernetes теперь управляются Argo CD из Git
+- репозиторий защищён: изменения попадают **только через merge request** с ревью —
+  никаких ручных `kubectl apply`, каждое изменение прослеживается и легко откатывается
+
+**В процессе — так же автоматизировать всё остальное:**
+
+- **Ansible по GitOps** — плейбуки меняются только через MR и применяются пайплайном,
+  а не с чьего-то ноутбука
+- **Секреты в Vault** — хранение и **автоматическая ротация** с **доменной авторизацией
+  (Active Directory)**, тоже через Git и MR
+
 ## Cloudflare
 
 Новый инструмент в моём арсенале: начал работать с Cloudflare, когда делал этот сайт.
@@ -98,7 +118,7 @@ DNS и Email Routing для 4etam.com управляются через Terrafor
 |----------------------|---------------------------------------------------------------------|
 | Контейнеры           | Kubernetes, Helm, Docker, Docker Swarm                               |
 | Виртуализация        | Proxmox VE, VMware vSphere                                           |
-| IaC и CI/CD          | Terraform, Ansible, GitLab CI, GitHub Actions, Jenkins, Nexus        |
+| IaC и CI/CD          | Terraform, Ansible, Argo CD (GitOps), GitLab CI, GitHub Actions, Jenkins, Nexus |
 | Данные и очереди     | PostgreSQL, Patroni, Kafka, RabbitMQ, Redis                          |
 | Сеть                 | HAProxy, Nginx, BIND, Cloudflare                                     |
 | Мониторинг и логи    | Grafana, VictoriaMetrics, Zabbix, ELK                                |

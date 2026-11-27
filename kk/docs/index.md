@@ -19,7 +19,7 @@ VMware-ден Proxmox VE-ге тоқтаусыз көшірді. [Толығыр
 
 - :material-server: **Инфрақұрылым** — bare metal, Proxmox VE, VMware, Kubernetes, дата-орталықтар арасындағы репликация
 - :material-swap-horizontal: **Платформаларды көшіру** — ірі ауқымда VMware → Proxmox, Docker Swarm → Kubernetes
-- :material-source-branch: **CI/CD және IaC** — GitLab CI, GitHub Actions, Terraform, Ansible, Helm
+- :material-source-branch: **GitOps, CI/CD және IaC** — Argo CD, GitLab CI, GitHub Actions, Terraform, Ansible, Helm
 - :material-database: **Деректер платформалары** — Patroni негізіндегі тұрақты PostgreSQL, Kafka, RabbitMQ, Redis
 - :material-chart-line: **Мониторинг** — Grafana, VictoriaMetrics, Zabbix, ELK
 - :material-shield-key: **Қауіпсіздік** — Vault арқылы құпияларды басқару

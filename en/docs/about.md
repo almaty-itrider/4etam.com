@@ -17,6 +17,7 @@ infrastructure work faster and safer.
 - CI/CD with GitLab CI, Ansible, Terraform, Nexus and Helm for Spring Boot / Angular microservices
 - PostgreSQL replication and backups; Kafka, BIND, HAProxy, Nginx, ELK, Zabbix, VictoriaMetrics, Grafana
 - Virtual infrastructure on VMware and Proxmox, replication across several data centers
+- Introduced GitOps with Argo CD on the Anti-Fraud Center project (DEV, STAGE, PRODUCTION)
 
 ### DevOps Engineer / Python Backend Developer — Investlink Ltd
 *Feb 2024 — Feb 2026*
@@ -86,6 +87,25 @@ and nobody registers VMs by hand. The approach scales to any number of nodes and
 Alongside the migration we kept moving from manual operations to reproducible, controlled
 changes: **Terraform** for infrastructure, **Ansible** for configuration, standardized processes.
 
+## GitOps on the Anti-Fraud Center project
+
+On the project I'm responsible for — the **Anti-Fraud Center** — I introduced a **GitOps** approach.
+It's the first project in the company to work this way.
+
+**Done:**
+
+- **Argo CD** deployed inside Kubernetes on all three environments: **DEV, STAGE and PRODUCTION**
+- every Kubernetes service of the project is now managed by Argo CD from Git
+- the repository is protected: changes go in **only through merge requests** with review —
+  no manual `kubectl apply`, every change is traceable and easy to roll back
+
+**In progress — automating everything else the same way:**
+
+- **Ansible under GitOps** — playbooks change only through MRs and are applied by a pipeline,
+  not from someone's laptop
+- **Secrets in Vault** — storage and **automatic rotation**, with **domain (Active Directory)
+  authentication**, also managed through Git and MRs
+
 ## Cloudflare
 
 New to my toolbox: I started working with Cloudflare while building this site — DNS and
@@ -98,7 +118,7 @@ The story is in the [first blog post](blog/2026-11-hello-world.md).
 |-------------------|-----------------------------------------------------------------------|
 | Containers        | Kubernetes, Helm, Docker, Docker Swarm                                 |
 | Virtualization    | Proxmox VE, VMware vSphere                                             |
-| IaC & CI/CD       | Terraform, Ansible, GitLab CI, GitHub Actions, Jenkins, Nexus          |
+| IaC & CI/CD       | Terraform, Ansible, Argo CD (GitOps), GitLab CI, GitHub Actions, Jenkins, Nexus |
 | Data & messaging  | PostgreSQL, Patroni, Kafka, RabbitMQ, Redis                            |
 | Networking        | HAProxy, Nginx, BIND, Cloudflare                                       |
 | Observability     | Grafana, VictoriaMetrics, Zabbix, ELK                                  |
