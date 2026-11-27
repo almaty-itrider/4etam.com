@@ -1,4 +1,5 @@
 site/
+public/
 .cache/
 .venv/
 __pycache__/

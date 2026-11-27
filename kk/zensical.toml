@@ -1,0 +1,70 @@
+# KK build. Built output is assembled by build.sh:
+#   en -> /, ru -> /ru/, kk -> /kk/
+[project]
+site_name = "4etam"
+site_description = "DevOps және бэкенд инженер: инфрақұрылым, Kubernetes, дерекқорлар және ЖИ құралдары."
+site_author = "Abylai Nurlanuly"
+site_url = "https://4etam.com/kk/"
+repo_url = "https://github.com/almaty-itrider/4etam.com"
+repo_name = "4etam.com"
+edit_uri = "edit/main/kk/docs/"
+copyright = "Copyright &copy; 2026 Abylai Nurlanuly"
+
+# The Zensical blog plugin is not supported yet: add each new post to the
+# "Blog" list below (newest first) and to blog/index.md.
+nav = [
+  { "Басты бет" = "index.md" },
+  { "Жобалар" = "projects.md" },
+  { "Блог" = [
+    "blog/index.md",
+    "blog/2026-11-hello-world.md",
+  ]},
+  { "Мен туралы" = "about.md" },
+]
+
+[project.theme]
+# Kazakh is not among Zensical's interface languages yet, so the theme
+# UI (search, "next", etc.) is shown in Russian. Content is in Kazakh.
+language = "ru"
+favicon = "assets/favicon.png"
+logo = "assets/favicon.png"
+features = [
+  "navigation.tabs",
+  "navigation.sections",
+  "navigation.top",
+  "navigation.footer",
+  "search.highlight",
+  "content.code.copy",
+  "content.action.edit",
+]
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Қараңғы тақырып"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Жарық тақырып"
+
+[project.extra]
+alternate = [
+  { name = "English", link = "/", lang = "en" },
+  { name = "Қазақша", link = "/kk/", lang = "kk" },
+  { name = "Русский", link = "/ru/", lang = "ru" },
+]
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/almaty-itrider"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/linkedin"
+link = "https://www.linkedin.com/in/abylay-kuvatov-443b57168/"
+
+[[project.extra.social]]
+icon = "fontawesome/solid/envelope"
+link = "mailto:me@4etam.com"

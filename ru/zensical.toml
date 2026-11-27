@@ -1,27 +1,31 @@
+# RU build. Built output is assembled by build.sh:
+#   en -> /, ru -> /ru/, kk -> /kk/
 [project]
 site_name = "4etam"
-site_description = "DevOps & backend engineer: infrastructure, Kubernetes, databases and AI tooling."
+site_description = "DevOps и бэкенд-инженер: инфраструктура, Kubernetes, базы данных и ИИ-инструменты."
 site_author = "Abylai Nurlanuly"
-site_url = "https://4etam.com/"
+site_url = "https://4etam.com/ru/"
 repo_url = "https://github.com/almaty-itrider/4etam.com"
 repo_name = "4etam.com"
-edit_uri = "edit/main/docs/"
+edit_uri = "edit/main/ru/docs/"
 copyright = "Copyright &copy; 2026 Abylai Nurlanuly"
 
-# The blog is a plain section for now: the Zensical blog plugin is not
-# supported yet. Add each new post to the "Blog" list below (newest first).
+# The Zensical blog plugin is not supported yet: add each new post to the
+# "Blog" list below (newest first) and to blog/index.md.
 nav = [
-  { "Home" = "index.md" },
-  { "Projects" = "projects.md" },
-  { "Blog" = [
+  { "Главная" = "index.md" },
+  { "Проекты" = "projects.md" },
+  { "Блог" = [
     "blog/index.md",
     "blog/2026-11-hello-world.md",
   ]},
-  { "About" = "about.md" },
+  { "Обо мне" = "about.md" },
 ]
 
 [project.theme]
-language = "en"
+language = "ru"
+favicon = "assets/favicon.png"
+logo = "assets/favicon.png"
 features = [
   "navigation.tabs",
   "navigation.sections",
@@ -36,13 +40,20 @@ features = [
 media = "(prefers-color-scheme: light)"
 scheme = "default"
 toggle.icon = "lucide/sun"
-toggle.name = "Switch to dark mode"
+toggle.name = "Тёмная тема"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: dark)"
 scheme = "slate"
 toggle.icon = "lucide/moon"
-toggle.name = "Switch to light mode"
+toggle.name = "Светлая тема"
+
+[project.extra]
+alternate = [
+  { name = "English", link = "/", lang = "en" },
+  { name = "Қазақша", link = "/kk/", lang = "kk" },
+  { name = "Русский", link = "/ru/", lang = "ru" },
+]
 
 [[project.extra.social]]
 icon = "fontawesome/brands/github"
